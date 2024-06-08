@@ -25,3 +25,22 @@
 ​					`git merge 需要合并的分支名`
 
 修改分支名称-`git branch -M main`
+
+git push [-f] [--set-upstream] [远端名称] [本地分支名] [:远端分支名] 
+
+-f 表示强制覆盖
+
+--set-upstream 推送到远端的同时并简历起远端分支关联关系
+
+```python
+1.删除远程仓库
+	git remote rm upstream
+```
+
+```python
+1.	# ![rejected]
+	error: failed to push some refs to 'github.com:Auororapyc/ccy.git'
+    #解决办法
+    git push --set-upstream origin main
+```
+
